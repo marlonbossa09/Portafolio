@@ -1,0 +1,630 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEADER navegación */
+
+.contenedor-head {
+  width: 100%;
+}
+header {
+  background: rgba(90, 56, 212, 0.767);
+  height: 100vh;
+  position: relative;
+  z-index: 99;
+}
+
+.img-menu {
+  position: fixed;
+  z-index: 999;
+  bottom: 30px;
+  right: 20px;
+  background: rgba(176, 231, 183, 0.589);
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+.img-menu:hover {
+  background: rgba(74, 110, 209, 0.74);
+  transition: all 200ms ease-out;
+}
+
+.contenedor-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding-bottom: 20px;
+}
+hr {
+  width: 90%;
+  border-color: rgb(20, 4, 4);
+}
+.contenido-nombre li {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contenedor-nav li {
+  list-style: none;
+  margin: 20px;
+}
+
+.contenedor-ul {
+  display: flex;
+  width: 100vh;
+}
+
+.contenedor-ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contenedor-ul a:hover {
+  border-bottom: 2px solid rgb(177, 21, 21);
+}
+
+/* HEADER TEXTO, IMAGEN*/
+
+.contenedor-texto-central {
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.contenedor-texto-central h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.contenedor-texto-central h3 {
+  font-size: 25px;
+  white-space: nowrap;
+  border-right: 3px solid;
+  animation: w1 5s linear infinite;
+  overflow: hidden;
+  width: 17ch;
+  margin-left: 550px;
+}
+@keyframes w1 {
+  from {
+    width: 0;
+  }
+}
+@keyframes w2 {
+  50% {
+    border-color: transparent;
+  }
+}
+.contenedor-texto-central img {
+  width: 2.5%;
+  margin: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-texto-central img:hover {
+  border: 1px solid rgb(99, 100, 107);
+}
+
+/* ILUSION */
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  color: #111111;
+}
+
+/* CUERPO QUIEN SOY*/
+
+h2 {
+  font-size: 55px;
+  font-weight: bold;
+  color: rgba(153, 98, 224, 0.993);
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor-main {
+  width: 90%;
+  padding: 50px 0;
+  display: flex;
+  margin-left: 60px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.seccion1 {
+  background: rgb(255, 255, 255);
+  margin-top: -46px;
+}
+
+.seccion2 {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(90, 69, 214),
+    rgb(95, 74, 173)
+  );
+}
+.contenedor-main img {
+  width: 240px;
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.parrafo {
+  text-align: justify;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 200px;
+  margin-right: 60px;
+  color: rgba(240, 228, 223, 0.842);
+}
+
+.imagen img {
+  width: 250px;
+  height: 250px;
+}
+
+.parrafo img {
+  width: 120px;
+  height: 150px;
+  margin-left: 200px;
+}
+
+/* CUERPO - MIS SERVICIOS*/
+
+.titulo-servicio {
+  margin-left: -10px;
+}
+.servicio-ul ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.servicio-ul li {
+  margin: 10px;
+  font-size: 18px;
+  color: rgba(240, 228, 223, 0.842);
+}
+
+.img-servicio {
+  width: 45px;
+  height: 55px;
+  margin: 0 60px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.contenedor-subtitulo-servicio {
+  display: flex;
+}
+
+/* PORTAFOLIO */
+
+.cont-portafolio {
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 200px;
+}
+
+.contenedor-portafolio {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.contenedor-portafolio a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.boton-portafolio {
+  margin-left: 130px;
+}
+
+.contenedor-portafolio p {
+  width: 60%;
+  text-align: justify;
+  justify-content: center;
+}
+
+.primeraImgPortafolio {
+  width: 292px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.segundaImgPortafolio {
+  width: auto;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.portafolio-img-github {
+  width: 2.5%;
+  margin: 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.884);
+  vertical-align: middle;
+}
+
+/*CONTACTOOO*/
+
+/*FORMULARIO*/
+.form {
+  background-color: rgba(105, 97, 97, 0.514);
+  width: 90%;
+  margin: auto;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.form__container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+.form__title {
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 0.4em;
+}
+.form__input {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2em;
+}
+
+.form__input--message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+
+.form__cta {
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #089fe0;
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  padding: 0.7em 0;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+/* FOOTER */
+footer {
+  display: block;
+  border: 1px solid rgb(99, 100, 107);
+  background: rgba(66, 66, 66, 0.788);
+}
+
+.texto-footer {
+  justify-content: center;
+  text-align: center;
+  color: rgb(238, 232, 187);
+}
+
+.contacto-img-github {
+  width: 8%;
+  margin: 0 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.contacto-img-github:hover {
+  background: rgba(78, 77, 77, 0.425);
+  border: 1px solid rgb(41, 41, 43);
+  cursor: pointer;
+}
+
+.contenedor-footer {
+  text-align: center;
+  justify-content: justify;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contenedor-footer a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.contenedor-footer a:hover {
+  color: rgb(247, 82, 82);
+}
+.img-menus {
+  display: none;
+}
+.contenido-nombres li a {
+  display: none;
+}
+/* RESPONSIVE*/
+
+@media screen and (max-width: 800px) {
+  header {
+    bottom: 10px;
+  }
+  .img-menus {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    background: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  .contenido-nombres li a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  .contenido-nombres li a:hover {
+    border-bottom: 2px solid rgb(177, 21, 21);
+    width: 57px;
+  }
+
+  .contenedor-head nav.contenedor-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(80, 76, 72, 0.884);
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+  }
+
+  .contenedor-nav {
+    transform: translate(-900px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .contenido-nombre {
+    display: none;
+  }
+  .contenedor-ul {
+    display: block;
+  }
+
+  .contenedor-ul a {
+    color: white;
+    line-height: 50px;
+  }
+
+  .show {
+    transform: translate(-20px);
+  }
+
+  .contenedor-texto-central h3 {
+    margin-left: 270px;
+  }
+  .contenedor-texto-central img {
+    width: 5%;
+  }
+  .contenedor-main {
+    display: block;
+    width: 80%;
+    margin-left: 85px;
+  }
+  .imagen img {
+    display: none;
+  }
+  .parrafo {
+    margin-left: 80px;
+  }
+  .parrafo img {
+    margin-left: 170px;
+    margin-bottom: 40px;
+  }
+  .img-servicio {
+    margin-left: 100px;
+  }
+
+  .titulo-servicio {
+    margin-left: -30px;
+  }
+
+  .cont-portafolio {
+    margin-left: 55px;
+  }
+
+  .primeraImgPortafolio {
+    width: 240px;
+  }
+
+  .segundaImgPortafolio {
+    height: 123px;
+  }
+  .contenedor-portafolio p {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  .boton-portafolio {
+    margin-left: 100px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .boton-portafolio:hover {
+    color: rgb(177, 21, 21);
+  }
+  .portafolio-img-github {
+    width: 5%;
+  }
+
+  /* FOOTER*/
+  .texto-footer {
+    margin-bottom: 20px;
+  }
+  .contenedor-footer {
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .contacto-img-github {
+    width: 2%;
+  }
+  .img-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor-texto-central h1 {
+    font-size: 45px;
+  }
+  .contenedor-texto-central h3 {
+    margin-left: 130px;
+  }
+  .contenedor-texto-central img {
+    width: 8%;
+  }
+
+  /*QUIEN SOY*/
+  .contenedor-main {
+    width: 75%;
+    margin-left: 70px;
+  }
+  .parrafo {
+    width: 80%;
+    margin-left: 36px;
+  }
+  .parrafo img {
+    margin-left: 80px;
+  }
+  /* PORTAFOLIO */
+  .cont-portafolio {
+    display: block;
+  }
+  .contenedor-portafolio {
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .img-menus {
+    right: 10px;
+  }
+  /*CONTACTO*/
+  .contenedor-footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: 30px;
+  }
+  .contacto-img-github {
+    width: 4%;
+  }
+
+  /*FORM*/
+
+  .form {
+    padding: 3.5em 1em;
+  }
+  .texto-footer {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor-texto-central h1 {
+    font-size: 40px;
+  }
+  .contenedor-texto-central h3 {
+    margin-left: 80px;
+  }
+
+  /*QUIEN SOY*/
+  .contenedor-main {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .parrafo {
+    margin-left: 28px;
+  }
+  .parrafo img {
+    margin-left: 60px;
+  }
+  /* SERVICIOS*/
+
+  .contenedor-subtitulo-servicio {
+    margin-left: -60px;
+  }
+  .titulo-servicio {
+    margin-left: -55px;
+  }
+
+  /*PORTAFOLIO*/
+  .seccion2 h2 {
+    font-size: 50px;
+  }
+  .contenedor-portafolio {
+    width: 80%;
+    margin-left: 0px;
+  }
+  .cont-portafolio {
+    margin-left: 66px;
+  }
+
+  .primeraImgPortafolio {
+    width: 200px;
+    cursor: pointer;
+  }
+
+  .segundaImgPortafolio {
+    height: 103px;
+  }
+  .contenedor-portafolio p {
+    width: 90%;
+    margin-left: 8px;
+  }
+
+  .boton-portafolio {
+    margin-left: 70px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .portafolio-img-github {
+    width: 7%;
+  }
+
+  .form {
+    width: 75%;
+  }
+
+  /*FOOTER*/
+}
